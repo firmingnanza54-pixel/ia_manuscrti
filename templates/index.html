@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head lang="fr">
+        <title>
+            IA reconnaissance de chiffre
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+    </head> 
+    <body>
+        <h2>Dessinez un chiffre (0 à 9)</h2>
+
+        <div id="grille"></div>
+
+        <div class="bouton" >
+            <button class="btn_predire" onclick="envoyer_prediction()">Prédire</button>
+            <button class="btn_effacer" onclick="effacer_grille()">Effacer</button>
+        </div>
+
+        <div id="resultat">Dessiner un chiffre puis appyer sur le bouton prédire</div>
+    </body>
+</html>
